@@ -58,15 +58,16 @@ Open index.html in any modern web browser (Chrome, Safari, Firefox, Edge).
 
 ## 🎨 Customization Guide
 
-Colors: To change the core theme colors, open style.css and modify the CSS variables in the :root pseudo-class:
+### Colors
 
+To change the core theme colors, open `style.css` and modify the CSS variables in the `:root` pseudo-class:
+
+```css
 :root {
   --gold: #d4af37;
   --dark: #0b0b0b;
   --card: #151515;
 }
-
-Contact Links: To update the contact links, open index.html, scroll to the <section id="contact">, and update the href attributes with your actual WhatsApp number and Instagram handle.
 
 ---
 
