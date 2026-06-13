@@ -33,7 +33,7 @@ Fonts: 'Orbitron' (Google Fonts) for display headings and Arial/Sans-serif for b
 ---
 
 ## 📂 File Structure
-
+```
 /gym-website
 │
 ├── index.html      # Main HTML layout
@@ -41,6 +41,7 @@ Fonts: 'Orbitron' (Google Fonts) for display headings and Arial/Sans-serif for b
 ├── script.js       # Logic for mobile menu and animations
 ├── logo.png        # Your transparent logo image (add your own)
 └── README.md       # Project documentation
+```
 
 ---
 
@@ -68,6 +69,7 @@ To change the core theme colors, open `style.css` and modify the CSS variables i
   --dark: #0b0b0b;
   --card: #151515;
 }
+```
 
 ---
 
