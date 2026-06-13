@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* VARIABLES */
+:root {
+  --gold: #d4af37;
+  --dark: #0b0b0b;
+  --card: #151515;
+}
+
+/* BODY */
+body {
+  background: var(--dark);
+  color: #f5f5f5;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  background: #000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--gold);
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+/* NAVIGATION */
+nav a {
+  color: #f5f5f5;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a:active {
+  color: var(--gold);
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle, #1a1a1a, #000);
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  color: var(--gold);
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #ccc;
+  max-width: 600px;
+}
+
+/* BUTTONS */
+.btn {
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: var(--gold);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn, button {
+  transition: all 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(212,175,55,0.25);
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: var(--gold);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* CARDS */
+.card, .price-card, .trainer-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(212,175,55,0.15);
+  transition: 0.3s;
+}
+
+.card:hover, .price-card:hover, .trainer-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--gold);
+  box-shadow: 0 12px 30px rgba(212,175,55,0.12);
+}
+
+.price {
+  font-size: 30px;
+  color: var(--gold);
+}
+
+/* CONTACT */
+#contact .card {
+  max-width: 500px;
+  margin: auto;
+  font-size: 18px;
+}
+
+#contact p {
+  margin: 15px 0;
+  color: #f5f5f5;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  border-top: 1px solid rgba(212,175,55,0.2);
+}
+
+/* ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(6px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* MOBILE MENU */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 101; 
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--gold);
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  nav {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    padding-top: 80px;
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid rgba(212,175,55,0.2);
+    padding: 20px 0;
+    display: flex;
+  }
+
+  nav a {
+    margin: 15px 0;
+    display: block;
+    font-size: 18px;
+  }
+
+  nav.active {
+    left: 0; 
+  }
+}
