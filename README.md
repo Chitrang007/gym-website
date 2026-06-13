@@ -1,4 +1,5 @@
-Absolute Fitness Zone - Website
+# Absolute Fitness Zone - Websiete
+
 A modern, responsive, single-page website built for a premium fitness center. It features a sleek dark-and-gold theme, smooth scroll animations, and a mobile-friendly layout to attract and convert gym memberships.
 
 🚀 Features
