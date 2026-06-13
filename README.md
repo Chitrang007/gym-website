@@ -2,7 +2,10 @@
 
 A modern, responsive, single-page website built for a premium fitness center. It features a sleek dark-and-gold theme, smooth scroll animations, and a mobile-friendly layout to attract and convert gym memberships.
 
-🚀 Features
+---
+
+## 🚀 Features
+
 Responsive Design: Fully responsive layout that looks great on desktops, tablets, and smartphones.
 
 Mobile Navigation: Features a custom animated hamburger menu for mobile devices.
@@ -15,7 +18,10 @@ Direct Contact Integration: Replaced traditional forms with direct, friction-fre
 
 Dark/Gold Theme: A premium, high-contrast aesthetic suited for a fitness brand.
 
-🛠️ Technologies Used
+---
+
+## 🛠️ Technologies Used
+
 HTML5: Semantic structure and layout.
 
 CSS3: Custom styling, flexbox/grid layouts, media queries, and animations.
@@ -24,7 +30,10 @@ Vanilla JavaScript: Mobile menu toggling, active link highlighting, and scroll r
 
 Fonts: 'Orbitron' (Google Fonts) for display headings and Arial/Sans-serif for body copy.
 
-📂 File Structure
+---
+
+## 📂 File Structure
+
 /gym-website
 │
 ├── index.html      # Main HTML layout
@@ -33,7 +42,10 @@ Fonts: 'Orbitron' (Google Fonts) for display headings and Arial/Sans-serif for b
 ├── logo.png        # Your transparent logo image (add your own)
 └── README.md       # Project documentation
 
-💻 Setup & Installation
+---
+
+## 💻 Setup & Installation
+
 This project requires no build tools or package managers.
 
 Clone or download the repository to your local machine.
@@ -42,8 +54,12 @@ Ensure index.html, style.css, script.js, and logo.png are in the same root folde
 
 Open index.html in any modern web browser (Chrome, Safari, Firefox, Edge).
 
-🎨 Customization Guide
+---
+
+## 🎨 Customization Guide
+
 Colors: To change the core theme colors, open style.css and modify the CSS variables in the :root pseudo-class:
+
 :root {
   --gold: #d4af37;
   --dark: #0b0b0b;
@@ -51,5 +67,7 @@ Colors: To change the core theme colors, open style.css and modify the CSS varia
 }
 
 Contact Links: To update the contact links, open index.html, scroll to the <section id="contact">, and update the href attributes with your actual WhatsApp number and Instagram handle.
+
+---
 
 Designed for Absolute Fitness Zone. © 2026
